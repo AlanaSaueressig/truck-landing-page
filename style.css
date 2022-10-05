@@ -1,0 +1,409 @@
+@charset "UTF-8"
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif; /* from google fonts */
+}
+
+html, body {
+	height: 100%;
+
+}
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto; /* top/bottom = 0 , left/right = auto */
+}
+
+.clear {
+	clear: both;
+}
+
+header {
+	width: 100%;
+	height: 95vh; /*medida vh é igual a 1/100 da altura da viewport. Altura do navegador= 900px, 1vh = 9px. */
+	min-height: 800px; /* foto não ocupará toda a tela */
+	padding: 40px 2%;
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(imagens/background_image.jpg);
+	background-size: cover;
+}
+
+header nav {
+	float: right; /* menu navegação ficará na superior direita */
+}
+
+header nav.desktop-menu ul{
+	list-style: none;
+}
+
+header nav.desktop-menu li{
+	float: left; /* menu navegação ficará lado a lado */
+	padding: 0 20px; /* top/bottom = 0 , left/right = 20 */
+}
+
+header nav.desktop-menu li a{
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	transition: 0.5s;
+}
+
+header nav.desktop-menu li a:hover {
+	color: #e2b220;
+}
+
+header .logo {
+	width: 120px;
+	height: 110px;
+	position: relative;
+	background-image: url(imagens/logo-caminhao.jpg);
+	background-size: cover;
+	background-color: none;
+	float: left;
+	top: -10px;
+}
+
+.chamada1 {
+	max-width: 600px;
+	float: right;
+	margin: 200px 150px;
+}
+
+.chamada1 h4 {
+	font-weight: 200;
+	color: white;
+}
+
+.chamada1 h2 {
+	font-weight: 300;
+	font-size: 40px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.chamada1 h3 {
+	font-weight: 800;
+	font-size: 40px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.chamada1 p {
+	font-size: 15px;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.chamada1 button {
+	padding: 10px 20px; /* top/bottom = 10, left/rigth = 20 */
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+	background: #e69138;
+	border: none;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.chamada1 button:hover {
+	background: #df4e1d;
+	color: white;
+}
+
+section.sessao1 {
+	width: 100%;
+	background: #e69138;
+	padding: 0 2%;
+	height: 400px; /* vai aumentar a pagina para baixo */
+}
+
+section.sessao1 .container {
+	max-width: 1000px;
+	height: calc(100% + 30px);
+}
+
+.texto-sessao1 {
+	float: left;
+	width: 50%;
+	position: relative;
+	left: 55px;
+	margin-top: 60px;
+	padding-left: 80px;
+	color: #192123;
+}
+
+.texto-sessao1 h2 {
+	font-size: 26px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.texto-sessao1 p {
+	margin-top: 20px;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.texto-sessao1 ul {
+	font-size: 15px;
+	list-style-position: outside; /* means that the bullet points will be outside the list item */
+	padding-left: 15px;
+}
+
+.texto-sessao1 ul li {
+	width: 100%;
+	margin-top: 8px;	
+}
+
+.btn1-texto {
+	background: #192123;
+	width: 165px;
+	height: 44px;
+	font-size: 13px;
+	color: white;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 30px; /* fica redondo e não quadrado */
+	cursor: pointer;
+}
+
+.device-sessao1 {
+	float: left;
+	width: 50%;
+	position: relative;
+	top: 30px;
+	height: 80%;
+	background: url(imagens/delivery.png);
+	background-size: 120% 100%;
+}
+
+.sessao2 {
+	padding-left: 2%;
+	padding-right: 2%;
+	background: white;
+	text-align: center;
+}
+
+.sessao2 .container {
+	max-width: 1000px;
+}
+
+.sessao2 h2 {
+	color: #192123;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.sessao2 p {
+	margin-top: 30px;
+	max-width: 900px;
+	display: inline-block;
+}
+
+.sessao2 img {
+	position: relative;
+	top: 70px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.sessao3 {
+	width: 100%;
+}
+
+.part1 {
+	color: #192123;
+	float: left;
+	width: 50%;
+	padding: 140px 0 90px 0;
+	background: #e69138;
+}
+
+.wraper-part1 {
+	max-width: 600px;
+	float: right;
+	padding: 0 30px;
+}
+
+.part1 h2 {
+	font-weight: 600;
+	font-style: italic;
+	font-size: 23px;
+}
+
+.part1 p{
+	font-size: 15px;
+	line-height: 35px;
+	margin-top: 10px;
+}
+
+.part2 {
+	float: left;
+	width: 50%;
+	padding: 140px 0 90px 0;
+	background: white; 
+}
+
+.sobre-diretor {
+	float: left;
+	max-width: 600;
+	padding-left: 30px;
+}
+
+.titulo-diretor {
+	float: left;
+}
+
+.titulo-diretor h2 {
+	color: #232323;
+	font-weight: 400;
+	font-size: 21px;
+	padding-right: 20px;
+}
+
+.titulo-diretor p {
+	font-size: 13px;
+	color: #232323;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.titulo-diretor .img-diretor {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-top: 5px;
+	background: url(imagens/diretor.jpg);
+	background-size: 100% 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.texto-diretor {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.texto-diretor p{
+	color: #232323;
+	font-size: 15px;
+}
+
+.slider-bullets {
+	width: 100%;
+	float: left;
+	padding-left: 30px;
+	margin-top: 12px;
+}
+
+.slider-bullets span {
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 8px;
+	cursor: pointer;
+	border-radius: 8px;
+	background: #9999;
+}
+
+
+section.sessao4 {
+	background: #d27512;
+	padding: 100px 0;
+}
+
+.form {
+	float: left;
+	width: 50%;
+	color: #192123;
+	padding-left: 10px;
+}
+
+.form h2 {
+	font-size: 23px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.form p {
+	font-size: 15px;
+	font-weight: 400;
+	max-width: 400px;
+	padding-right: 10px;
+}
+
+.form form {
+	margin-top: 15px;
+}
+
+.form form input[type = text] {
+	width: 90%;
+	max-width: 480px;
+	height: 58px;
+	padding-left: 58px;
+	line-height: 58px;
+	border: none;
+	border-radius: 20px;
+} 
+
+.form form textarea {
+	width: 90%;
+	margin-top: 8px;
+	max-width: 480px;
+	padding: 15px;
+	border: none;
+	border-radius: 20px;
+	height: 160px;
+}
+
+.form form input[type = submit] {
+	border: 0;
+	background: #192123;
+	width: 165px;
+	height: 44px;
+	font-size: 13px;
+	color: white;
+	cursor: pointer;
+	margin-top: 15px;
+	border-radius: 30px;
+
+} 
+
+.map-wraper {
+	float: left;
+	width: 50%;
+	padding: 0 10px;
+}
+
+.map-wraper3 {
+	margin-top: 10px;
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+}
+
+/*.map-wraper2 {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding-top: 100%; 
+} */
+
+.map {
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	border:  5px solid rgb(200, 200, 200);
+}
