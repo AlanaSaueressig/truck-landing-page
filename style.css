@@ -216,6 +216,7 @@ section.sessao1 .container {
 
 .sessao3 {
 	width: 100%;
+	margin-bottom: -5px;
 }
 
 .part1 {
@@ -255,6 +256,7 @@ section.sessao1 .container {
 	float: left;
 	max-width: 600;
 	padding-left: 30px;
+	margin-bottom: -42px; 
 }
 
 .titulo-diretor {
@@ -279,11 +281,13 @@ section.sessao1 .container {
 	float: left;
 	width: 60px;
 	height: 60px;
-	margin-top: 5px;
+	margin-top: 20px;
 	background: url(imagens/diretor.jpg);
 	background-size: 100% 100%;
 	object-fit: cover;
 	border-radius: 20px;
+	margin-top: 20px;
+	
 }
 
 .texto-diretor {
@@ -295,13 +299,15 @@ section.sessao1 .container {
 .texto-diretor p{
 	color: #232323;
 	font-size: 15px;
+	margin-top: 10px;
 }
 
 .slider-bullets {
 	width: 100%;
 	float: left;
 	padding-left: 30px;
-	margin-top: 12px;
+	margin-top: 60px;
+	margin-bottom: -39px;  /*<< inclui para sessao4 ficar alinhada */
 }
 
 .slider-bullets span {
@@ -318,6 +324,7 @@ section.sessao1 .container {
 section.sessao4 {
 	background: #d27512;
 	padding: 100px 0;
+	margin-top: -45px;
 }
 
 .form {
@@ -347,6 +354,7 @@ section.sessao4 {
 .form form input[type = text] {
 	width: 90%;
 	max-width: 480px;
+	margin-top: 8px;
 	height: 58px;
 	padding-left: 58px;
 	line-height: 58px;
@@ -381,6 +389,8 @@ section.sessao4 {
 	float: left;
 	width: 50%;
 	padding: 0 10px;
+	margin-top: -5px;
+
 }
 
 .map-wraper3 {
@@ -388,22 +398,26 @@ section.sessao4 {
 	width: 100%;
 	max-width: 480px;
 	position: relative;
+
 }
 
-/*.map-wraper2 {
+.map-wraper2 {
 	position: relative;
 	left: 0;
 	top: 0;
-	width: 100%;
+	width: 68%;
 	padding-top: 100%; 
-} */
+} 
 
 .map {
 	left: 0;
 	top: 0;
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 60%;
 	background: white;
 	border:  5px solid rgb(200, 200, 200);
 }
+
+
+47: 32;
